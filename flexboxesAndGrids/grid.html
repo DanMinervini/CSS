@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sunt?
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis vero dolorum a atque nisi quas.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sunt?
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis vero dolorum a atque nisi quas.
+        </div>
+    </div>
+</body>
+</html>
